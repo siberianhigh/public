@@ -1,5 +1,5 @@
-# modified from https://github.com/stephenturner/qqman/blob/master/R/manhattan.R to plot results from the BayeScan output
-# Most of original comments are retained; comments related to the modification are tagget with 'ES'/
+# Modified from https://github.com/stephenturner/qqman/blob/master/R/manhattan.R to plot results from the BayeScan output
+# Most of original comments are retained; comments related to the modification are tagget with 'ES'
 
 
 #' Creates a manhattan plot
@@ -49,7 +49,7 @@
 #'   
 #' @export
 
-manhattanES <- function(x, chr="CHR", bp="BP", p="P", snp="SNP", 
+manhattanBS <- function(x, chr="CHR", bp="BP", p="P", snp="SNP", 
                       col=c("gray10", "gray60"), chrlabs=NULL, labely=NULL,
                       suggestiveline=-log10(1e-5), genomewideline=-log10(5e-8), 
                       highlight=NULL, highlightB=NULL, logp=TRUE, annotatePval = NULL, annotateTop = TRUE, ...) {
